@@ -1,0 +1,25 @@
+I find my solution is pretty much old school as I see others just use one line of code and it kinda frustrates me;
+
+for this one i defined a varialble with a huge number(tried PostiveInfinity Like Infinity in JS but it didn't work)
+Then I split the big string using the spaces and then looped through each word in the list.
+
+then simply I put conditional statment of any of the words starting from the begining has a smaller length than the variable smallest i created early then this samalled will be equals this word length
+
+
+public class Kata
+{
+  public static int FindShort(string s)
+  {
+    var smallest = 1000;
+    
+    var listSt = s.Split(' ');
+    
+    foreach(var word in listSt) {
+      
+      if(smallest > word.Length) {
+        smallest = word.Length;
+      }
+    }
+    return smallest;
+  }
+}

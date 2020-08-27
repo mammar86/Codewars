@@ -1,0 +1,37 @@
+Problem:
+Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+Your task is to calculate how many blank pages do you need.
+
+Inputs: number of studends & number of pages in the paperwork
+Output: number of balnk pages required fro all the students 
+
+Example:
+Paperwork(5, 5) == 25
+
+Data Structure:
+
+If we have n of students that need the paper work and the original had m number of pages 
+so n*m will give us the total number of blank pages required to solve the problem
+
+Algorithm:
+
+will start with a conditional statment stating that if n or m is < zero
+then return 0;
+else return n*m
+
+
+Code:
+
+
+  using System;
+  public static class Paper
+  {
+    public static int Paperwork(int n, int m)
+    {
+      if(n < 0 || m < 0) {
+        return 0;
+      }
+      return n*m;
+    }
+    
+  }
